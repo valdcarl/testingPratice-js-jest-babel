@@ -7,8 +7,13 @@ function reverseString(string) {
      * 
      * ex: string = "hello"     return: "olleh"
      */
-    return string.split("").reverse().join("");
-    
+
+    let resultString = "";            // to hold our reversedSttring
+    for (let i = string.length - 1; i >= 0; i--) {
+        // decrement through each index of string until empty and append those indexs to resultString
+        resultString += string[i];     
+    }
+    return resultString;
 }
 
 module.exports = reverseString;
