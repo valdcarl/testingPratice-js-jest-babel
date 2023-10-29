@@ -12,5 +12,4 @@ function capitalize(string) {
     return s;
 }
 
-
 module.exports = capitalize;
